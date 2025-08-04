@@ -1,0 +1,100 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e3f2fd;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo-principal {
+  text-align: center;
+  font-size: 3rem;
+  color: #1976d2;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.contenedor {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+.seccion {
+  margin: 20px 0;
+}
+
+input,
+select,
+button {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1976d2;
+}
+
+.oculto {
+  display: none;
+}
+
+.img-derecha {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 300px;
+  z-index: 1000;
+}
+
+@media print {
+  .img-derecha {
+    display: none !important;
+  }
+}
+
+.posicion-relativa {
+  position: relative;
+}
+
+.imagen-superpuesta {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 350px;
+  z-index: 10;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.ocultar-imagen {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.oculto {
+  display: none;
+}
